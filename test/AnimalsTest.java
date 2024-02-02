@@ -48,4 +48,18 @@ public class AnimalsTest {
         Assert.assertEquals(false, medDillo.canShelter());
     }
 
+    @Test
+    public void testFunStuff() {
+        Shark shark1 = new Shark(100, 0.5, 0);
+        Shark shark2 = new Shark(80, 0.5, 0);
+
+        shark2 = new Shark(65, 0.5, 0);
+        System.out.println(shark2.length);
+
+        Shark shark3 = shark1;
+        shark3.attacks = 1;
+        System.out.println(shark1.attacks);
+
+    }
+
 }
