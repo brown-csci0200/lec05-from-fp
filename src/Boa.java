@@ -1,8 +1,8 @@
 /**
  * Represents a Boa
  *
- */
-public class Boa extends SizedAnimal {
+ */ // implicitly implements IAnimal
+public class Boa extends SizedAnimal{
     public String name;
     public String eats;
 
@@ -14,6 +14,6 @@ public class Boa extends SizedAnimal {
 
     @Override // This method implements some contract (or ..)
     public boolean isNormalSize() {
-        return super.isLengthWithin(30, 60); // Also valid to use this.isLengthWithin
+        return this.isLengthWithin(30, 60); // Also valid to use this.isLengthWithin
     }
 }

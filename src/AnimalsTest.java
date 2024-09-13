@@ -45,4 +45,57 @@ public class AnimalsTest {
         Assert.assertEquals(false, medDillo.canShelter());
     }
 
+
+    @Test
+    public void testSomethingFun() {
+        Boa boa1 = new Boa("slinky", 30, "apples");
+        Boa boa2 = new Boa("slim", 30, "bugs");
+
+        boa1.eats = "tofu";
+        boa2 = new Boa("slim", 15, "grass");
+
+        Boa boa3 = boa1;
+        boa3.eats = "donuts";
+        //boa1 = new Boa(..)
+
+//        Boa boa4 = new Boa(boa1);
+        System.out.println(boa1.eats);
+        // print(boa1.eats)
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @Test
+    public void testFun() {
+        Boa boa1 = new Boa("slinky", 30, "apples");
+        Boa boa2 = new Boa("slim", 30, "bugs");
+
+        boa1.eats = "tofu";
+        boa2 = new Boa("slim", 15, "grass");
+
+        Boa boa3 = boa1;
+        boa3.eats = "donuts";
+
+
+        System.out.println(boa3);
+    }
 }
