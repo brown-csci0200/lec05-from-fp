@@ -64,6 +64,18 @@ public class AnimalsTest {
     }
 
 
+    @Test
+    public void someAdditionalFun() {
+        Boa boaA = new Boa("a", 12, "tofu");
+        Boa boaB = new Boa("b", 12, "cake");
+
+        boaA.length = boaB.length + 1;
+
+        Boa boaC = boaA;  // boaC now points to same object as boaA
+        boaA = new Boa("a", 25, "paper");     // reassign name boaA to different object!
+    }
+
+
 
 
 
